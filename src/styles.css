@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; padding: 0;}
+
+.app-container{
+  width: 70%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-right: 17px !important;
+}
+
+.app-container::-webkit-scrollbar {
+  display: none;
+}
+
+

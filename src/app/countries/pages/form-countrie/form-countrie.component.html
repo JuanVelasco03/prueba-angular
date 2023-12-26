@@ -1,0 +1,48 @@
+<div class="container">
+  <h1>Agregar país</h1>
+  <form class="item" #checkoutForm="ngForm">
+    <mat-form-field class="form__element">
+      <mat-label>Nombre</mat-label>
+      <input matInput required [(ngModel)]="model.countryName" name="countryName" #name="ngModel" />
+      <mat-error *ngIf="!name.valid || name.pristine">
+        Debe diligenciar el campo
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form__element">
+      <mat-label>Capital</mat-label>
+      <input matInput required [(ngModel)]="model.capital" name="capital" #name="ngModel" />
+      <mat-error *ngIf="!name.valid || name.pristine">
+        Debe diligenciar el campo
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form__element">
+      <mat-label>Nombre del continente</mat-label>
+      <input matInput required [(ngModel)]="model.continentName" name="continentName" #name="ngModel" />
+      <mat-error *ngIf="!name.valid || name.pristine">
+        Debe diligenciar el campo
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form__element">
+      <mat-label>Población</mat-label>
+      <input matInput required [(ngModel)]="model.population" name="population" #name="ngModel" />
+      <mat-error *ngIf="!name.valid || name.pristine">
+        Debe diligenciar el campo
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form__element">
+      <mat-label>URL de la imagen</mat-label>
+      <input matInput required [(ngModel)]="model.img" name="img" #name="ngModel" />
+      <mat-error *ngIf="!name.valid || name.pristine">
+        Debe diligenciar el campo
+      </mat-error>
+    </mat-form-field>
+
+  </form>
+  <div class="container__button">
+    <button [disabled]="!checkoutForm.form.valid" mat-raised-button color="primary" type="submit" (click)="onSubmit(checkoutForm)">Guardar</button>
+  </div>
+</div>

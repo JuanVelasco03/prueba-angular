@@ -1,0 +1,17 @@
+<div class="section">
+  <h1>Países</h1>
+  <button mat-fab extended [routerLink]="['/countries/form-countrie']">
+    Agregar País
+  </button>
+  <br>
+  <hr>
+  <mat-grid-list cols="3" rowHeight="350px">
+    <div *ngFor="let countrie of countries" >
+      <mat-grid-tile>
+        <app-countrie [countrie]="countrie" (deleteCountrie)="onDeleteCountrie($event)" ></app-countrie>
+      </mat-grid-tile>
+    </div>
+  </mat-grid-list>
+
+
+</div>

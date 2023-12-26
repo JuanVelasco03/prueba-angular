@@ -1,0 +1,34 @@
+.container{
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.form__element{
+  width: 100%;
+  padding: 12px;
+}
+
+.item{
+  flex:1 1 auto;
+}
+
+.form{
+  width: 100%;
+
+}
+
+.container__button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  margin-left: 12px;
+}

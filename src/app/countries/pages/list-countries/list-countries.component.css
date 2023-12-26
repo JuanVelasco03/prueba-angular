@@ -1,0 +1,19 @@
+.section{
+  margin-top: 1rem;
+}
+
+.container__cards{
+  display: flex;
+
+}
+
+.countrie__card{
+  max-width: 300px;
+  height: 500px;
+}
+
+button{
+  margin-bottom: 1rem;
+}
+
+

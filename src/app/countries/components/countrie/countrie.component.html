@@ -1,0 +1,14 @@
+<mat-card class="countrie__card">
+  <mat-card-header>
+    <img mat-card-image [src]="countrie.img" alt="Photo of a Shiba Inu" width="200px" height="130px">
+  </mat-card-header>
+  <mat-card-content>
+    <mat-card-title>{{countrie.countryName}}</mat-card-title>
+    <mat-card-subtitle>Capital: {{countrie.capital}}</mat-card-subtitle>
+    <mat-card-subtitle>Continente: {{countrie.continentName}}</mat-card-subtitle>
+    <mat-card-subtitle>Población: {{countrie.population}}</mat-card-subtitle>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-flat-button color="warn" (click)="onDelete(countrie.id)">Eliminar</button>
+  </mat-card-actions>
+</mat-card>
